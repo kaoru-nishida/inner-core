@@ -1,14 +1,14 @@
-## ？
+## 保存データー読み込み時
 ```
 Callback.addCallback("ReadSaves", function(globalScope){
 });
 ```
-## ？
+## 保存データー書き込み時
 ```
 Callback.addCallback("WriteSaves", function(globalScope){
 });
 ```
-## ？
+## カスタムブロックのテッセレーション？
 ```
 Callback.addCallback("CustomBlockTessellation", function(api, coords, block, b){
 });
@@ -33,7 +33,7 @@ Callback.addCallback("ModsLoaded", function(){
 Callback.addCallback("PostLoaded", function(){
 });
 ```
-## ？
+## アプリの停止時
 ```
 Callback.addCallback("AppSuspended", function(){
 });
@@ -118,7 +118,7 @@ Callback.addCallback("NativeCommand", function(objArr){
 Callback.addCallback("PlayerAttack", function(attacker, entity){
 });
 ```
-## ？
+## Entityがブロックに触れた時？
 ```
 Callback.addCallback("EntityInteract", function(entity, player){
 });
@@ -138,7 +138,7 @@ Callback.addCallback("EntityDeath", function(entity, attacker,damageType){
 Callback.addCallback("ProjectileHit", function(objArr){
 });
 ```
-## レッドストーンの？？時
+## レッドストーン信号の変更があった時
 ```
 Callback.addCallback("RedstoneSignal", function(r8){
 });
@@ -168,7 +168,7 @@ Callback.addCallback("ItemUsingReleased", function(Item, ticks){
 Callback.addCallback("ItemUsingComplete", function(Item){
 });
 ```
-## Itemが発射?された時
+## Itemが発射された時
 ```
 Callback.addCallback("ItemDispensed", function(Coords, Item){
 });
@@ -178,12 +178,12 @@ Callback.addCallback("ItemDispensed", function(Coords, Item){
 Callback.addCallback("NativeGuiChanged", function(name){
 });
 ```
-## ？
+## Block定義直前？
 ```
 Callback.addCallback("PreBlocksDefined", function(){
 });
 ```
-## ？
+## Block定義時？
 ```
 Callback.addCallback("BlocksDefined", function(){
 });
