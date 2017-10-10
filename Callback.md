@@ -1,71 +1,128 @@
-Callback.invokeAPICallback("PreLoaded", new Object[0]);
+Callback.addCallback("ReadSaves", function(globalScope){
+});
 
-Callback.invokeAPICallback("APILoaded", new Object[0]);
+Callback.addCallback("WriteSaves", function(globalScope){
+});
 
-Callback.invokeAPICallback("ModsLoaded", new Object[0]);
+Callback.addCallback("CustomBlockTessellation", function(api, coords, block, b){
+});
 
-Callback.invokeAPICallback("PostLoaded", new Object[0]);
+Callback.addCallback("PreLoaded", function(){
+});
 
-Callback.invokeAPICallback("AppSuspended", new Object[0]);
+Callback.addCallback("APILoaded", function(){
+});
 
-Callback.invokeAPICallback("LevelSelected", worldName, worldDir);
+Callback.addCallback("ModsLoaded", function(){
+});
 
-Callback.invokeAPICallback("LevelPreLoaded", new Object[0]);
+Callback.addCallback("PostLoaded", function(){
+});
 
-Callback.invokeAPICallback("LevelLoaded", new Object[0]); 
+Callback.addCallback("AppSuspended", function(){
+});
 
-Callback.invokeAPICallback("DimensionLoaded", Integer.valueOf(dimension));
+Callback.addCallback("LevelSelected", function(worldName, worldDir){
+});
 
-Callback.invokeAPICallback("LevelPreLeft", new Object[0]);
+Callback.addCallback("LevelPreLoaded", function(){
+});
 
-Callback.invokeAPICallback("LevelLeft", new Object[0]);   
+Callback.addCallback("LevelLoaded", function(){
+});
 
-Callback.invokeAPICallback("DestroyBlock", new Coords(x, y, z, side), new FullBlock(NativeAPI.getTileAndData(x, y, z)), Long.valueOf(NativeAPI.getPlayer()));
-     
-Callback.invokeAPICallback("DestroyBlockStart", new Coords(x, y, z, side), new FullBlock(NativeAPI.getTileAndData(x, y, z)), Long.valueOf(NativeAPI.getPlayer()));
+Callback.addCallback("DimensionLoaded", function(dimension){
+});
 
-Callback.invokeAPICallback("DestroyBlockContinue", new Coords(x, y, z, side), new FullBlock(NativeAPI.getTileAndData(x, y, z)), Long.valueOf(NativeAPI.getPlayer()));
+Callback.addCallback("LevelPreLeft", function(){
+});
 
-Callback.invokeAPICallback("BuildBlock", new Coords(x, y, z, side), new FullBlock(NativeAPI.getTileAndData(x, y, z)), Long.valueOf(NativeAPI.getPlayer()));
+Callback.addCallback("LevelLeft", function(){
+});
 
-Callback.invokeAPICallback("ItemUse", coords, new ItemInstance(NativeAPI.getEntityCarriedItem(NativeAPI.getPlayer()));
+Callback.addCallback("DestroyBlock", function(Coords, Block, Player){
+});
 
-Callback.invokeAPICallback("Explosion", objArr);
+Callback.addCallback("DestroyBlockStart", function(Coords, Block, Player){
+});
 
-Callback.invokeAPICallback("FoodEaten", Integer.valueOf(food), Float.valueOf(ratio));
+Callback.addCallback("BuildBlock", function(Coords, Block, Player){
+});
 
-Callback.invokeAPICallback("ExpAdd", Integer.valueOf(exp));
+Callback.addCallback("ItemUse", function(coords, Item, Block){
+});
 
-Callback.invokeAPICallback("ExpLevelAdd", Integer.valueOf(level));
+Callback.addCallback("Explosion", function(objArr){
+});
 
-Callback.invokeAPICallback("NativeCommand" , objArr);
+Callback.addCallback("FoodEaten", function(food,ratio){
+});
 
-Callback.invokeAPICallback("PlayerAttack", Long.valueOf(attacker), Long.valueOf(entity));
+Callback.addCallback("ExpAdd", function(exp){
+});
 
-Callback.invokeAPICallback("EntityInteract", Long.valueOf(entity), Long.valueOf(player));
+Callback.addCallback("ExpLevelAdd", function(level){
+});
 
-Callback.invokeAPICallback("EntityAdded", Long.valueOf(entity));
+Callback.addCallback("NativeCommand", function(objArr){
+});
 
-Callback.invokeAPICallback("EntityRemoved", Long.valueOf(entity));
+Callback.addCallback("PlayerAttack", function(attacker, entity){
+});
 
-Callback.invokeAPICallback("EntityDeath", Long.valueOf(entity), Long.valueOf(attacker), Integer.valueOf(damageType));
+Callback.addCallback("EntityInteract", function(entity, player){
+});
 
-Callback.invokeAPICallback("EntityHurt", Long.valueOf(attacker), Long.valueOf(entity), Integer.valueOf(damageValue), Integer.valueOf(damageType), Boolean.valueOf(someBool1), Boolean.valueOf(someBool2));
+Callback.addCallback("EntityRemoved", function(entity){
+});
 
-Callback.invokeAPICallback("ProjectileHit", objArr);
+Callback.addCallback("EntityDeath", function(entity, attacker,damageType){
+});
 
-Callback.invokeAPICallback("RedstoneSignal", r8);
+Callback.addCallback("ProjectileHit", function(objArr){
+});
 
-Callback.invokeAPICallback("ItemIconOverride", new ItemInstance(id, count, data));
+Callback.addCallback("RedstoneSignal", function(r8){
+});
 
-Callback.invokeAPICallback("ItemNameOverride", new ItemInstance(id, count, data), translated, name);
+Callback.addCallback("ItemIconOverride", function(Item){
+});
 
-Callback.invokeAPICallback("ItemUseNoTarget", new ItemInstance(NativeAPI.getEntityCarriedItem(NativeAPI.getPlayer())));
+Callback.addCallback("ItemNameOverride", function(Item, translated, name){
+});
 
-Callback.invokeAPICallback("ItemUsingReleased", new ItemInstance(NativeAPI.getEntityCarriedItem(NativeAPI.getPlayer())), Integer.valueOf(ticks));
+Callback.addCallback("ItemUseNoTarget", function(Item){
+});
 
-Callback.invokeAPICallback("ItemUsingComplete", new ItemInstance(NativeAPI.getEntityCarriedItem(NativeAPI.getPlayer())));
+Callback.addCallback("ItemUsingReleased", function(Item, ticks){
+});
 
-Callback.invokeAPICallback("ItemDispensed", new Coords((double) x, (double) y, (double) z).setSide(side), new ItemInstance(id, count, data));
+Callback.addCallback("ItemUsingComplete", function(Item){
+});
 
-Callback.invokeAPICallback("NativeGuiChanged", "screen_name");
+Callback.addCallback("ItemDispensed", function(Coords, Item){
+});
+
+Callback.addCallback("NativeGuiChanged", function(name){
+});
+
+Callback.addCallback("PreBlocksDefined", function(){
+});
+
+Callback.addCallback("BlocksDefined", function(){
+});
+
+Callback.addCallback("tick",function(){
+});
+
+Callback.addCallback("GenerateChunk", function(chunkX, chunkZ){
+});
+
+Callback.addCallback("GenerateChunkUnderground", function(chunkX, chunkZ){
+});
+
+Callback.addCallback("GenerateNetherChunk", function(chunkX, chunkZ){
+});
+
+Callback.addCallback("GenerateEndChunk", function(chunkX, chunkZ){
+});
