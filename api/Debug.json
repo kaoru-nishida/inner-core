@@ -1,0 +1,51 @@
+[
+  {
+    "function_name":"Debug.sysTime",
+    "args":"()",
+    "comment":"システム時間を返します",
+    "return_type":"number",
+    "return_sample":""
+  },
+  {
+    "function_name":"Debug.addParticle",
+    "args":"(x, y, z, id, vx, vy, vz, data)",
+    "comment":"Particleを追加します",
+    "return_type":"null",
+    "return_sample":"null"
+  },
+  {
+    "function_name":"Debug.message",
+    "args":"(String message)",
+    "comment":"デバッグメッセージを送信します",
+    "return_type":"null",
+    "return_sample":"null"
+  },
+  {
+    "function_name":"Debug.warning",
+    "args":"(String message)",
+    "comment":"警告でメッセージを送信",
+    "return_type":"null",
+    "return_sample":"null"
+  },
+  {
+    "function_name":"Debug.error",
+    "args":"(String message)",
+    "comment":"エラーでメッセージを送信",
+    "return_type":"null",
+    "return_sample":"null"
+  },
+  {
+    "function_name":"Debug.m",
+    "args":"()",
+    "comment":"",
+    "return_type":"",
+    "return_sample":""
+  },
+  {
+    "function_name":"Debug.bitmap",
+    "args":"(Bitmap bitmap, String title)",
+    "comment":"",
+    "return_type":"",
+    "return_sample":""
+  }
+]
